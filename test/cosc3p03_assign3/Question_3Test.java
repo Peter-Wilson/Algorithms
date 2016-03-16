@@ -58,8 +58,23 @@ public class Question_3Test {
      */
     @Test
     public void testGetCheapestPath_2() {
-        System.out.println("getCheapestPath");
+        System.out.println("getCheapestPath with negatives");
         int n = 8;
+        int[] prices = {0,-3,-5,-3,-6};
+        Question_3 instance = new Question_3(prices);
+        int expResult = -24;
+        int result = instance.getCheapestPath(n);
+        System.out.println(result);
+        assertEquals(expResult, result);
+    }
+    
+    /**
+     * Test of getCheapestPath method, of class Question_3.
+     */
+    @Test
+    public void testGetCheapestPath_3() {
+        System.out.println("getCheapestPath n is more than double the m");
+        int n = 30;
         int[] prices = {0,5,8,6,15};
         Question_3 instance = new Question_3(prices);
         int expResult = 22;

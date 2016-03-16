@@ -58,10 +58,9 @@ public class Question_3 {
                
            for(int j = 0; j<i; j++)
            {
-               if(j >= m || i-j >= m) continue;
                if(distances[j] == Integer.MAX_VALUE || distances[i-j] == Integer.MAX_VALUE)
                {
-                   if(j==i || i-j==i)
+                   if((j==i || i-j==i) && i < m)
                    {
                        distances[i] = prices[i];
                    }
