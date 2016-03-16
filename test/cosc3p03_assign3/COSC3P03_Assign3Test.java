@@ -44,9 +44,6 @@ public class COSC3P03_Assign3Test {
     public void testMain() {
         System.out.println("main");
         String[] args = null;
-        COSC3P03_Assign3.main(args);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }
