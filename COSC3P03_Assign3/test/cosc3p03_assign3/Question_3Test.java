@@ -37,10 +37,20 @@ public class Question_3Test {
     public void tearDown() {
     }
 
+    /**
+     * Test of getCheapestPath method, of class Question_3.
+     */
     @Test
-    public void testSomeMethod() {
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    public void testGetCheapestPath() {
+        System.out.println("getCheapestPath");
+        int n = 8;
+        int[] prices = {0,5,8,6,15};
+        int miles = 5;
+        Question_3 instance = new Question_3(miles, prices);
+        int expResult = 0;
+        int result = instance.getCheapestPath(n);
+        System.out.println(result);
+        assertEquals(expResult, result);
     }
     
 }

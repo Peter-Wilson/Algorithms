@@ -26,18 +26,21 @@ public class COSC3P03_Assign3 {
         {
             System.out.println("Enter the number of matrices:");
             int n = sc.nextInt();
-            int[] matrices = new int[n];
+            int[] matrices = new int[n+1];
             
             System.out.println("Enter n-values into the list separated by spaces");
-            for(int i = 0; i < n && sc.hasNext(); i++)
+            for(int i = 0; i <= n && sc.hasNext(); i++)
                 matrices[i] = sc.nextInt();
             
             Question_2 q2 = new Question_2(n, matrices);
-            System.out.println(q2.getLowestMultiplications());            
+            q2.printBrackets();            
         }
         else
         {
-            Question_3 q3 = new Question_3();
+            System.out.println("Enter the distance you wish to travel: ");
+            int n = sc.nextInt();
+            Question_3 q3 = new Question_3(5);
+            q3.getCheapestPath(n);
         }
     }
     
