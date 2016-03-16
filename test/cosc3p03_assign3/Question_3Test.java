@@ -46,8 +46,23 @@ public class Question_3Test {
         int n = 8;
         int[] prices = {0,5,8,6,15};
         int miles = 5;
-        Question_3 instance = new Question_3(miles, prices);
-        int expResult = 0;
+        Question_3 instance = new Question_3(prices);
+        int expResult = 22;
+        int result = instance.getCheapestPath(n);
+        System.out.println(result);
+        assertEquals(expResult, result);
+    }
+    
+    /**
+     * Test of getCheapestPath method, of class Question_3.
+     */
+    @Test
+    public void testGetCheapestPath_2() {
+        System.out.println("getCheapestPath");
+        int n = 8;
+        int[] prices = {0,5,8,6,15};
+        Question_3 instance = new Question_3(prices);
+        int expResult = 22;
         int result = instance.getCheapestPath(n);
         System.out.println(result);
         assertEquals(expResult, result);

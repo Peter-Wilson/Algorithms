@@ -15,9 +15,9 @@ public class Question_3 {
     int ks[];
     int distances[];
     
-    public Question_3(int m, int[] prices)
+    public Question_3(int[] prices)
     {
-        this.m = m;
+        this.m = prices.length;
         this.prices = prices;
     }
     
