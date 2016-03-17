@@ -44,7 +44,7 @@ public class Question_2Test {
     public void testGetLowestMultiplications() {
         System.out.println("getLowestMultiplications");
         int[] matrices = {4,10,3,12,20,7};
-        Question_2 instance = new Question_2(5, matrices);
+        Question_2 instance = new Question_2(matrices);
         int expResult = 1344;
         int result = instance.getLowestMultiplications();
         assertEquals(expResult, result);
@@ -55,7 +55,7 @@ public class Question_2Test {
     public void testGetLowestMultiplications_2() {
         System.out.println("getLowestMultiplications_2");
         int[] matrices = {10,20,50,1,100};
-        Question_2 instance = new Question_2(4, matrices);
+        Question_2 instance = new Question_2(matrices);
         int expResult = 2200;
         int result = instance.getLowestMultiplications();
         assertEquals(expResult, result);
@@ -64,10 +64,65 @@ public class Question_2Test {
     
     @Test
     public void testGetLowestMultiplications_3() {
-        System.out.println("getLowestMultiplications_2");
+        System.out.println("getLowestMultiplications_3");
         int[] matrices = {10,30,5,60};
-        Question_2 instance = new Question_2(3, matrices);
+        Question_2 instance = new Question_2(matrices);
         int expResult = 4500;
+        int result = instance.getLowestMultiplications();
+        assertEquals(expResult, result);
+        instance.printBrackets();
+    }
+    
+    @Test
+    public void testGetLowestMultiplications_4() {
+        System.out.println("getLowestMultiplications_4");
+        int[] matrices = {40, 20, 30, 10, 30};
+        Question_2 instance = new Question_2(matrices);
+        int expResult = 26000;
+        int result = instance.getLowestMultiplications();
+        assertEquals(expResult, result);
+        instance.printBrackets();
+    }
+    
+    @Test
+    public void testGetLowestMultiplications_5() {
+        System.out.println("getLowestMultiplications_5");
+        int[] matrices = {10, 20, 30, 40, 30};
+        Question_2 instance = new Question_2(matrices);
+        int expResult = 30000;
+        int result = instance.getLowestMultiplications();
+        assertEquals(expResult, result);
+        instance.printBrackets();
+    }
+    
+    @Test
+    public void testGetLowestMultiplications_6() {
+        System.out.println("getLowestMultiplications_6");
+        int[] matrices = {10, 20, 30};
+        Question_2 instance = new Question_2(matrices);
+        int expResult = 6000;
+        int result = instance.getLowestMultiplications();
+        assertEquals(expResult, result);
+        instance.printBrackets();
+    }
+    
+    @Test
+    public void testGetLowestMultiplications_7() {
+        System.out.println("getLowestMultiplications_6");
+        int[] matrices = {30, 35, 15, 5, 10, 20, 25};
+        Question_2 instance = new Question_2(matrices);
+        int expResult = 15125;
+        int result = instance.getLowestMultiplications();
+        assertEquals(expResult, result);
+        instance.printBrackets();
+    }
+    
+    @Test
+    public void testGetLowestMultiplications_8() {
+        System.out.println("getLowestMultiplications_6");
+        int[] matrices = {20, 25, 5, 10, 30, 15, 20, 10, 5, 40};
+        Question_2 instance = new Question_2(matrices);
+        int expResult = 13500;
         int result = instance.getLowestMultiplications();
         assertEquals(expResult, result);
         instance.printBrackets();

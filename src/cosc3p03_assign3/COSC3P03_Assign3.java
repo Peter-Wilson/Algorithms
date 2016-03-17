@@ -46,7 +46,7 @@ public class COSC3P03_Assign3 {
             for(int i = 0; i <= n && sc.hasNext(); i++)
                 matrices[i] = sc.nextInt();
             
-            Question_2 q2 = new Question_2(n, matrices);
+            Question_2 q2 = new Question_2(matrices);
             q2.printBrackets();            
         }
         else

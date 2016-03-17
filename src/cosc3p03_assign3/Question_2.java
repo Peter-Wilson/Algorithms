@@ -15,10 +15,10 @@ public class Question_2 {
    int[][] ks;
    int[] matrices;
    
-   public Question_2(int n, int[] matrices)
+   public Question_2(int[] matrices)
    {
+       this.n = matrices.length-1;
        multi = new int[n][n];
-       this.n = n;
        this.matrices = matrices;
    }
    
