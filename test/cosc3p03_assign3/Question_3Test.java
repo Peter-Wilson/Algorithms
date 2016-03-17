@@ -47,7 +47,7 @@ public class Question_3Test {
         int[] prices = {0,5,8,6,15};
         int miles = 5;
         Question_3 instance = new Question_3(prices);
-        int expResult = 22;
+        int expResult = 20;
         int result = instance.getCheapestPath(n);
         System.out.println(result);
         assertEquals(expResult, result);
@@ -77,7 +77,7 @@ public class Question_3Test {
         int n = 30;
         int[] prices = {0,5,8,6,15};
         Question_3 instance = new Question_3(prices);
-        int expResult = 22;
+        int expResult = 60;
         int result = instance.getCheapestPath(n);
         System.out.println(result);
         assertEquals(expResult, result);

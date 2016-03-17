@@ -21,8 +21,22 @@ public class COSC3P03_Assign3 {
         Scanner sc = new Scanner(System.in);
         
         // select the program to use
-        System.out.println("Select the question you with to run (2 or 3):");
-        if(sc.nextInt() == 2)
+        System.out.println("Select the question you with to run (1, 2 or 3):");
+        int question = sc.nextInt();
+        if(question == 1)
+        {
+            System.out.println("Enter the length of the list:");
+            int n = sc.nextInt();
+            int[] list = new int[n];
+            
+            System.out.println("Enter n-values into the list separated by spaces");
+            for(int i = 0; i <= n && sc.hasNext(); i++)
+                list[i] = sc.nextInt();
+            
+            Question_1 q2 = new Question_1(list);
+            System.out.println("Longest Path is: "+ q2.getLargestIncreasingPath());           
+        }
+        if(question == 2)
         {
             System.out.println("Enter the number of matrices:");
             int n = sc.nextInt();
