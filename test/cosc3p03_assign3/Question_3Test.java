@@ -89,7 +89,7 @@ public class Question_3Test {
     @Test
     public void testGetCheapestPath_4() {
         System.out.println("getCheapestPath with a 0 price");
-        int n = 31;
+        int n = 30;
         int[] prices = {0,0,8,6,15};
         Question_3 instance = new Question_3(prices);
         int expResult = 0;

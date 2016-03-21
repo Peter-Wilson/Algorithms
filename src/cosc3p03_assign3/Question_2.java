@@ -1,7 +1,6 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Implement the algorithm matrix chain multiplication to find an optimal way to
+   multiply n matrices.
  */
 package cosc3p03_assign3;
 
@@ -76,7 +75,7 @@ public class Question_2 {
         }
         else
         {
-            return printOptimumPath(i,ks[i][j]) + printOptimumPath(ks[i][j]+1,j);
+            return "("+printOptimumPath(i,ks[i][j]) + printOptimumPath(ks[i][j]+1,j)+")";
         }
     }
    
